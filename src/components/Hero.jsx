@@ -20,7 +20,7 @@ const Hero = () => {
     });
 
     return (
-        <div className='mt-32 heroSection relative flex flex-col items-center justify-center lg:h-screen h-[60vh] '>
+        <div className=' heroSection relative flex flex-col items-center justify-center lg:min-h-screen h-[60vh] '>
             <div className='bigTitle absolute'>
                 <div>
                     <h1 className='animate-charcter opacity-30 lg:text-[100px] font-bold md:text-[80px] sm:text-[50px] text-[40px]'>
@@ -32,9 +32,9 @@ const Hero = () => {
                     </h1>
                 </div>
             </div>
-            <div className='contentWrapper absolute'>
+            <div className='contentWrapper absolute h-[40vh] md:h-[70vh] lg:h-full'>
                 <div className='content flex flex-col items-center justify-end'>
-                    <div className=' bg-inherit lg:w-[540px] lg:h-[720] md:w-[420px] md:h-[650] sm:w-[320px] sm:h-[550] w-[250px]'>
+                    <div className=' bg-inherit lg:w-[540px] lg:h-[720] md:w-[420px] md:h-[650] sm:w-[320px] w-[250px]'>
                         <img
                             className='myPicture'
                             ref={(el) => (myPicture = el)}
@@ -46,7 +46,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className='flex flex-col items-center justify-center md:mt-6'>
-                    <h2 className='waviy font-bold lg:text-4xl mb-4 mt-4 text-white md:text-2xl sm:text-xl text-[16px]'>
+                    <h2 className='waviy font-bold lg:text-4xl mb-2 text-white md:text-2xl sm:text-xl text-[16px]'>
                         Creative &nbsp;
                         <span style={{ "--i": 1 }}>F</span>
                         <span style={{ "--i": 2 }}>r</span>

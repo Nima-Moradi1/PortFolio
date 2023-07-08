@@ -1,15 +1,15 @@
-import picture from "../assets/aboutPic.png";
+import picture from "../assets/aboutPic.webp";
 
 const About = () => {
     return (
-        <div className='lg:flex lg:w-[85vw] md:mx-auto mt-72'>
+        <div className='lg:flex lg:w-[85vw] md:mx-auto mb-48 lg:h-[50vh] mt-72'>
             <div className='hover:border-y-4 hover:border-gray-800 hover:scale-105 duration:500 flex items-center justify-center mx-auto bg-gradient-to-b from-transparent to-black rounded-full w-[230px] h-[230px] mt-32 md:mt-8 md:w-[360px] md:h-[360px] sm:w-[300px] sm:h-[300px] lg:w-[360px] lg:h-[360px]'>
                 <img
                     src={picture}
                     className='rounded-[27%] w-[200px] h-3/4 object-cover overflow-hidden md:w-[300px] '
                 />
             </div>
-            <div className='flex flex-col gap-5 items-center justify-center mt-10 text-2xl ml-5 mr-5 lg:text-4xl'>
+            <div className='flex flex-col gap-5 items-center justify-start mt-10  text-2xl ml-5 mr-5 lg:text-4xl'>
                 <h3 className='animate-charcter border-b-2 border-blue-500 text-white lg:mb-14'>
                     About Me
                 </h3>

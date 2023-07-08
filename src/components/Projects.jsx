@@ -1,9 +1,9 @@
 import { useRef } from "react";
 import gsap from "gsap";
-import nimovie from "../assets/nimovie.png";
-import ecommerce from "../assets/ecommerce.png";
-import todolist from "../assets/todolist.png";
-import musicplayer from "../assets/mplayer.png";
+import nimovie from "../assets/nimovie.webp";
+import ecommerce from "../assets/ecommerce.webp";
+import todolist from "../assets/todolist.webp";
+import musicplayer from "../assets/mplayer.webp";
 
 const Projects = () => {
     let projectImage = useRef(null);
@@ -61,7 +61,7 @@ const leaveHandler4 = () => {
 };
 
     return (
-        <div className='flex flex-col items-center justify-center w-[80vw] mx-auto mt-48 md:mt-72'>
+        <div className='flex flex-col items-center justify-center w-[80vw] mx-auto lg:h-[50vh]'>
             <h1 className='animate-charcter border-b-2 border-blue-500 bigTitle flex items-center justify-center font-bold text-lg text-white mb-12 md:text-2xl lg:text-4xl '>
                 My Recent Works
             </h1>
