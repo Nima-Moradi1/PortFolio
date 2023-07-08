@@ -24,18 +24,21 @@ const ContactForm = () => {
                         placeholder='Please Enter Your Name'
                         className='my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none md:px-24'
                         type='text'
+                        required
                     />
                     <input
                         name='email'
                         placeholder='Please Enter Your E-Mail'
                         className=' mb-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none md:px-24'
                         type='text'
+                        required
                     />
                     <textarea
                         name='message'
                         placeholder='Write Your Message...'
                         className='p-2 bg-transparent border-[1px] rounded-md text-white focus:outline-none md:px-24'
-                        rows='10'></textarea>
+                        rows='10'
+                        required></textarea>
                     <button className='bg-gradient-to-br from-cyan-500 to-blue-500 rounded-xl px-6 py-3 my-8 mx-auto flex items-center justify-center hover:scale-110 duration-500'>
                         Let's Talk
                     </button>

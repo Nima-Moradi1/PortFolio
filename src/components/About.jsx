@@ -2,7 +2,7 @@ import picture from "../assets/aboutPic.webp";
 
 const About = () => {
     return (
-        <div className='lg:flex lg:w-[85vw] md:mx-auto mb-48 lg:h-[50vh] mt-72'>
+        <div className='lg:flex lg:w-[85vw] md:mt-80 md:mx-auto mb-48 lg:mb-18 lg:h-[50vh] mt-72'>
             <div className='hover:border-y-4 hover:border-gray-800 hover:scale-105 duration:500 flex items-center justify-center mx-auto bg-gradient-to-b from-transparent to-black rounded-full w-[230px] h-[230px] mt-32 md:mt-8 md:w-[360px] md:h-[360px] sm:w-[300px] sm:h-[300px] lg:w-[360px] lg:h-[360px]'>
                 <img
                     src={picture}
