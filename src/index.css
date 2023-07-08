@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&family=Montserrat:wght@600&family=Mystery+Quest&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  user-select: none;
+  background-image: linear-gradient(to bottom right, rgb(76, 76, 76), rgb(35, 34, 34), black);
+}
+
+.myName {
+  text-shadow: 2px 2px 0 #01010165, -2px -2px 0 #01010165, 2px -2px 0 #01010165, -2px 2px 0 #00000065,
+    2px 2px 0 #01010165;
+}
+.contactSvg img:hover {
+  transition: 0.6s ease-in;
+  transform: rotate(360deg);
+}
+
+/* for textt animation in Nima Moradi sectionn */
+
+/* .content h2 {
+  color: rgb(81, 176, 243);
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px;
+}
+
+.content h2:nth-child(2) {
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 5%,
+      16% 5%,
+      33% 5%,
+      54% 5%,
+      70% 5%,
+      84% 5%,
+      100% 5%,
+      100% 40%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+} */
+
+/*   Here is the animation for DEVELOPER text   */
+.animate-charcter {
+  font-family: 'Abril Fatface', cursive;
+  background-image: linear-gradient(-225deg, black 0%, #bababa 29%, #3c3636 67%, #918e8e 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 7s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* here we create an animation for front-end word */
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  color: rgb(81, 176, 243);
+  animation: waviy 2s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes waviy {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-15px);
+  }
+}
